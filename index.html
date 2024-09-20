@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Dallins Defalt
+  </title>
+  <script src="js/global_var.js"></script>
+  <script src="js/startup.js"></script>
+  <script defer src="js\script.js"></script>
+
+  <link defer rel="stylesheet" href="css\custom_styles.css" />
+  <link defer rel="stylesheet" href="css\styles.css" />
+</head>
+
+<body class="bg-black" >
+  <div class="bg_image m-0">
+
+    <slot comp = "nav_bar"></slot>
+    <slot comp = "home"> </slot>
+    <!-- <slot comp = "button" comp_data = "button"></slot> -->
+    <!-- <div class="p-100"></div> -->
+    <slot comp="bot_bar"></slot>
+  </div>
+</body>
+
+</html>

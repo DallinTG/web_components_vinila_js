@@ -1,0 +1,213 @@
+
+<section comp = "button" class="justify-content-center">
+    <button  class="button #{classes}" onclick="#{js}" type="button">
+        <samp class=>
+            #{text}
+            
+        </samp>
+        <br>
+        <small>
+            #{small_text}
+        </small>
+    </button>
+</section>
+
+<section comp = "button_nav" class = "flex mr-4">
+    <!-- <div class="button_nav button_light"> -->
+        <button  class="button_nav button_dark" onclick="#{js}" type="button">
+            <samp class= "p-1">
+                #{text}
+                
+            </samp>
+            <br>
+            <small>
+                #{small_text}
+            </small>
+        <!-- </button> -->
+    </div>
+</section>
+
+
+
+<section comp = "nav_bar" class="nav_bar p-4 flex flex-wrap ">
+    <h1 class="mt-3 ml-4 flex">TrailRunner</h1>
+    <div class="flex right  mt-a mb-a flex-wrap">
+        <slot comp = "button_nav" comp_data = "button_nav_home"></slot>
+        <slot comp = "button_nav" comp_data = "button_nav_shop"></slot>
+        <slot comp = "button_nav" comp_data = "button_nav_apparel"></slot>
+        <slot comp = "button_nav" comp_data = "button_nav_newsletter"></slot>
+    </div>
+</section>
+
+<section comp = "bot_bar" class="nav_bar bot_bar p-4 flex flex-wrap mt-a">
+    <h1 class="mt-4 ml-4 flex">TrailRunner</h1>
+    <div class="flex right  mt-a mb-a flex-wrap">
+        <div>
+            <h2 class="pt-2 footer_text mr-8 flex">. Follow us on</h2>
+            <div class="block-social-media-footer flex mr-8">
+                  <a href="https://www.facebook.com" target="_blank" class="m-1 footer_social_icon icon-facebook icon">facebook</a>
+                  <a href="https://www.instagram.com" target="_blank" class="m-1 footer_social_icon icon-instagram icon">instagram</a>
+                  <a href="https://www.youtube.com" target="_blank" class= "m-1 footer_social_icon icon-youtube icon">youtube</a>
+                  <a href="https://www.tiktok.com" target="_blank" class="m-1 footer_social_icon icon-tiktok icon">tiktok</a>
+          </div>
+        </div>
+        <div class="mt-4">
+            <slot comp = "button_nav" comp_data = "button_nav_newsletter"></slot>
+        </div>
+
+    </div>
+</section>
+
+<section comp = "home" class="tab_swop">
+    <h1 class="mt-3 ml-4 flex ml-12 mt-4">Home</h1>
+    <section  class="flex gap-4 flex-wrap flex justify-content-center mt-16 mb-16">
+        <slot comp = "card" comp_data = "card_home"></slot>
+        <slot comp = "card_shop" comp_data = "card_home2"></slot>
+        <slot comp = "card_shop" comp_data = "card_home3"></slot>
+        <slot comp = "card_shop" comp_data = "card_home4"></slot>
+        <slot comp = "card_shop" comp_data = "card_home5"></slot>
+        <slot comp = "card_shop" comp_data = "card_home6"></slot>
+        <slot comp = "card_shop" comp_data = "card_home7"></slot>
+        <slot comp = "card_shop" comp_data = "card_home8"></slot>
+        <slot comp = "card_shop" comp_data = "card_home9"></slot>
+    </section>
+
+</section>
+<section comp = "shop" class="tab_swop">
+    <h1 class="mt-3 ml-4 flex ml-12 mt-4">Shop</h1>
+    <section class="flex gap-4 flex-wrap flex justify-content-center mt-16 mb-16">
+        <slot comp = "card_shop" comp_data = "card_shop1b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop2b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop3b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop4b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop5b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop6b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop7b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop8b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop9b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop10b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop11b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop12b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop1b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop2b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop3b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop4b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop5b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop6b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop7b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop8b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop9b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop10b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop11b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop12b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop1b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop2b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop3b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop4b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop5b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop6b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop7b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop8b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop9b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop10b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop11b"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop12b"></slot>
+    </section>
+
+</section>
+<section comp = "apparel" class="tab_swop">
+    <h1 class="mt-3 ml-4 flex ml-12 mt-4">Apparel</h1>
+    <section class="flex gap-4 flex-wrap flex justify-content-center mt-16 mb-16">
+        <slot comp = "card_shop" comp_data = "card_shop1"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop2"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop3"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop4"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop5"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop6"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop7"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop8"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop9"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop10"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop11"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop12"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop1"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop2"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop3"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop4"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop5"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop6"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop7"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop8"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop9"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop10"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop11"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop12"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop1"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop2"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop3"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop4"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop5"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop6"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop7"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop8"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop9"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop10"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop11"></slot>
+        <slot comp = "card_shop" comp_data = "card_shop12"></slot>
+    </section>
+</section>
+<section comp = "newsletter" class="tab_swop ">
+    <h1 class="mt-3 ml-4 flex ml-12 mt-4 ">Newsletter</h1>
+    <div class="flex p-a justify-content-center mt-16">
+        <section class="card p-8 justify-content-center">
+            <div class =" flex_shrink flex flex_column ">
+                <span class="text-center justify-content-center m-4" >Sign up For our Newsletter</span>
+                <input name="email"  autocomplete="email" type="email" spellcheck="false" placeholder="Email Address" class="flex shadow">
+                <slot comp = "button" comp_data = "button_sign_up" ></slot>
+            </div>
+        </section>
+    </div>
+
+    <div class="flex m-20 justify-content-center mt-16">
+        <section class="card p-8 justify-content-center">
+            <div class =" flex_shrink flex flex_column ">
+                <h2 class="title">Last Months Newsletter</h2>
+                <br>
+
+                <img src="/img/01_83-069A3919.jpg" alt="landscape">
+                <small>September 10.2024</small>
+                <h2>Marcin Matuszny in Canada_part 1</h2>
+                <br>
+                <P>PART 1
+
+
+                    Coming for a month-long trip to Canada and you can only take one bike, what would it be? Marcin Matuszny aka. Banan chose Hornet Pro!
+                    
+                    Well, most of you who don't know him may be surprised, but this hardtail warrior was truly happy with his choice!
+                    
+                    
+                    Marcin literally conquered the whole Whistler Bikepark - a feat that is impressive in itself. He spiced it with a trip to the north shore mecca of North Vancouver, which has a few trails we can't name due to the digger's hard labor, Squamish, and Pemberton's finest. Enough? Nah, Marcin went for Coast Gravity Park! Bears, massive features, lovely views, and a feeling there is much more to shred!
+                    
+                     
+                    
+                    Riding daily requires great skills and strength, which many may underestimate. We are in awe Marcin does it with no rear suspension, but damn, these pictures don't lie so enjoy and Ride Your Way!</P>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section comp = "card" class="card mr-16 ml-16 flex ">
+    <div class="p-4">
+        <h1 class="title">#{title}</h1>
+        <br>
+        <span class="m-8">#{p}</span>
+    </div>
+</section>
+
+<section comp = "card_shop" class="card flex">
+    <div class="p-4 shop_card">
+        <img src="#{img}" alt="">
+        <h1 class="title pt-4">#{title}</h1>
+        <small class="text-center justify-content-center p-a">#{small}</small>
+    </div>
+</section>

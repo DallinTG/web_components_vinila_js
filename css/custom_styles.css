@@ -1,0 +1,207 @@
+@font-face {
+	font-family: "Shockwave";
+	src: url(Shockwave.ttf);
+}
+@font-face {
+	font-family: "gothic";
+	src: url(GothicA1-Regular.ttf);
+}
+
+.button {
+ border: 0;
+ margin: .4rem;
+ border-radius:.3rem;
+ font-family: "gothic";
+ font-weight: 600;
+ box-shadow: .2rem .1rem .1rem var(--gray);
+ display: flex;
+ padding: .3rem;
+} 
+.button_nav {
+	border: 0;
+	margin: .1rem;
+	border-radius:.2rem;
+	font-family: "gothic";
+	font-weight: 600;
+	/* box-shadow: .2rem .1rem .1rem var(--gray); */
+	display: flex;
+	padding: .01rem;
+	
+   } 
+
+.button_h1 {
+	background-image: linear-gradient(var(--c_h1), var(--c_h1_l));
+}
+.button_h1:hover {
+	background-image: linear-gradient(var(--c_h1_ll), var(--c_h1_lll));
+	box-shadow: 0rem 0rem 0rem var(--gray);
+}
+.button_h2 {
+	background-image: linear-gradient(var(--c_h2), var(--c_h2_l));
+}
+.button_h2:hover {
+	background-image: linear-gradient(var(--c_h2_ll), var(--c_h2_lll));
+	box-shadow: 0rem 0rem 0rem var(--gray);
+}
+.button_dark {
+	background-image: linear-gradient(var(--c_dark), var(--c_dark_l));
+	color: var(--c_light);
+	border: 2px;
+	border-style: solid;
+	border-color: var(--c_light_d);
+}
+.button_dark:hover {
+	background-image: linear-gradient(var(--c_dark_ll), var(--c_dark_lll));
+	box-shadow: 0rem 0rem 0rem var(--gray);
+	color: var(--c_light);
+}
+.button_light {
+	background-image: linear-gradient(var(--c_light), var(--c_light_d));
+	color: var(--c_dark);
+	box-shadow: .2rem .1rem .1rem var(--c_black); */
+}
+.button_light:hover {
+	background-image: linear-gradient(var(--c_light_dd), var(--c_light_ddd));
+	box-shadow: 0rem 0rem 0rem var(--gray);
+	color: var(--c_dark);
+}
+.nav_bar{
+	background-image: linear-gradient(var(--c_dark), var(--c_dark));
+	background-color: var(--c_dark);
+	box-shadow: .0rem .1rem .1rem var(--gray);
+	color: var(--c_light);
+}
+.bot_bar{
+	/* height : 10vh; */
+    /* position : relative; */
+    /* top : 40vh; */
+}
+.shadow{
+	box-shadow: .0rem .1rem .1rem var(--gray);
+}
+
+h1{
+	font-family: "Shockwave";
+	font-size: 1.5rem;
+}
+small{
+	font-family: "gothic";
+	font-weight: 300;
+	font-size: .6rem;
+}
+.right{
+ margin-left: auto;
+}
+
+.bg_image{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	/* width: 100vw; */
+background-image: url("/img/bikev2.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: contain; */
+}
+.tab_swop{
+	animation: fadeinleft .3s both;
+	-webkit-animation: fadeinleft .3s both;
+	-moz-animation: fadeinleft .3s both;
+
+}
+.fade_in{
+	animation: fadeinleft .3s both;
+	-webkit-animation: fadeinleft .3s both;
+	-moz-animation: fadeinleft .3s both;
+
+}
+.fade-out{
+	animation: fadeoutright .3s both;
+	-webkit-animation: fadeoutright .3s both;
+	-moz-animation: fadeoutright .3s both;
+	
+
+}
+
+@keyframes fadeinleft{
+	0%{
+		opacity: 0;
+		transform:translateX(-100%)
+	}
+	100%{
+		opacity: 100;
+	}
+}
+
+@keyframes fadeoutright{
+	0%{
+		opacity: 100;
+		/* transform:translateX(+50px); */
+	}
+	100%{
+		transform:translateX(100%);
+		opacity: 0;
+		
+	}
+}
+
+@-moz-keyframes fadeinleft{
+	0%{
+		opacity: 0;
+		transform:translateX(-100%)
+	}
+	100%{
+		opacity: 100;
+	}
+}
+
+@-moz-keyframes fadeoutright{
+	0%{
+		opacity: 100;
+		/* transform:translateX(+50px); */
+	}
+	100%{
+		transform:translateX(100%);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeinleft{
+	0%{
+		opacity: 0;
+		transform:translateX(-100%)
+	}
+	100%{
+		opacity: 100;
+	}
+}
+
+@-webkit-keyframes fadeoutright{
+	0%{
+		opacity: 100;
+		/* transform:translateX(+50px); */
+	}
+	100%{
+		transform:translateX(100%);
+		opacity: 0;
+	}
+}
+
+.card {
+	display: flex;
+	background-color: color-mix(in hsl, var(--c_light_d), rgba(255, 127, 80, 0) 10%);
+	border-radius: .2rem;
+
+}
+.bg-black{
+ background-color: black;
+}
+.gap-4{
+	gap: 1.5rem;
+}
+.shop_card{
+	width: 225px;
+}
+.biger_card{
+	width: 300px;
+}
